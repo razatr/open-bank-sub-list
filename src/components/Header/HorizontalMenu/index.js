@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import MenuButton from "../MenuButton";
 import lock from "./Lock.svg";
 import { MAIN_COLOR1, MAIN_COLOR2 } from "../../../constants";
+import { connect } from 'react-redux'
 
 class HorizontalMenu extends Component {
 
@@ -13,12 +14,14 @@ class HorizontalMenu extends Component {
     }
 
     getMenu() {
+        const {newSub} = this.props
+
         return <div style={ { display: 'flex' } }>
-            <MenuButton title = "Главная"/>
-            <MenuButton title = "Мои финансы"/>
-            <MenuButton title = "Мои подписки" active notification='5'/>
-            <MenuButton title = "Платежи и переводы"/>
-            <MenuButton title = "Безопасность"/>
+            <MenuButton title="Главная"/>
+            <MenuButton title="Мои финансы"/>
+            <MenuButton title="Мои подписки" active notification={ newSub.length }/>
+            <MenuButton title="Платежи и переводы"/>
+            <MenuButton title="Безопасность"/>
             <MenuButton icon="mail"/>
             <MenuButton icon="settings"/>
             <MenuButton icon="exit"/>
@@ -28,7 +31,7 @@ class HorizontalMenu extends Component {
     render() {
         return <div id='horizontal-menu'>
             <div style={ { flexGrow: 1, display: 'flex', paddingLeft: '50px' } }>
-                <img src={lock} alt="Вход" style={{paddingLeft: "15px", paddingRight: "15px"}}/>
+                <img src={ lock } alt="Вход" style={ { paddingLeft: "15px", paddingRight: "15px" } }/>
                 { this.getUserInfo() }
             </div>
             <div style={ {
@@ -39,4 +42,6 @@ class HorizontalMenu extends Component {
     }
 }
 
-export default HorizontalMenu
+export default connect((state)=> ({
+    newSub: state.subscriptions.get('newSub').toArray()
+}))(HorizontalMenu)

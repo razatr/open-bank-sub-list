@@ -9,6 +9,7 @@ export const MAIN_COLOR2 = '#efefef'
 
 //Const for actions
 export const LOAD_SUBSCRIPTION = 'LOAD_SUBSCRIPTION'
+export const SUB_REVIEWED = 'SUB_REVIEWED'
 
 export const START = '_START'
 export const SUCCESS = '_SUCCESS'

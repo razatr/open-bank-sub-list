@@ -1,15 +1,17 @@
-import {LOAD_SUBSCRIPTION, SUCCESS, START, FAIL } from '../constants'
-import {Record} from 'immutable'
+import { LOAD_SUBSCRIPTION, SUCCESS, START, FAIL, SUB_REVIEWED } from '../constants'
+import { Record, List } from 'immutable'
+import newSub from '../data/new-sub'
 
 const subRecord = Record({
     loading: false,
     loaded: false,
     error: false,
-    entities: {}
+    entities: {},
+    newSub: new List(newSub)
 })
 
 export default (state = new subRecord(), action) => {
-    const { type, error, response } = action
+    const { type, error, response, payload } = action
 
     switch (type) {
         case LOAD_SUBSCRIPTION + START:
@@ -26,6 +28,12 @@ export default (state = new subRecord(), action) => {
         case LOAD_SUBSCRIPTION + FAIL:
             console.log('ERROR', error)
             return state.set('error', true)
+
+        case SUB_REVIEWED:
+            const { payload } = action
+            const key = state.get('newSub').keyOf(payload)
+            return state
+                .set('newSub', state.get('newSub').delete(key))
     }
 
     return state
