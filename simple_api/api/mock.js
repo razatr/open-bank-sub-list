@@ -104,7 +104,7 @@ const subscriptions = {
         "initialDate": "02-02-2020",
         "price": "499",
         "currency": "USD",
-        "categoryId": "1",
+        "categoryId": "6",
         "notificationDelay": "2",
         "site": "https://www.jetbrains.com/ru-ru/idea/buy/#commercial?billing=yearly",
         "trial" : "false"
