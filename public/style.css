@@ -1,0 +1,132 @@
+@font-face {
+
+    font-family: 'Whitney-Medium';
+
+    src: url('./fonts/Whitney-Book.otf');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./img/header-img.jpg);
+    align-items: center
+}
+
+#main-logo {
+    background-image: url(./img/Header_logo.svg);
+}
+
+#horizontal-menu {
+    display: flex;
+    height: 50px;
+    background-color: #333333;
+    justify-content: space-between;
+}
+
+#header-contact {
+    padding-right: 70px;
+}
+
+#header-phone {
+    color: white;
+    font-size: 2em;
+}
+
+#header-call {
+    color: white;
+    font-size: 0.8em;
+}
+
+#body {
+    display: flex;
+    height: 700px;
+}
+
+#body > div {
+    padding: 20px;
+}
+
+.menu-button {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #efefef;
+}
+
+.menu-button:hover {
+    background-color: #2eb9e4;
+    cursor: pointer;
+}
+
+.menu-button > div:hover {
+    color: #efefef;
+}
+
+.menu-button-icon {
+    background-color: #333333;
+}
+
+.subscription {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #efefef;
+    justify-content: space-between;
+}
+
+.subscription:hover {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.trial-text {
+    height: 1.4em;
+    font-size: 0.5em;
+    background-color: red;
+    color: white;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.subscription-site {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: #2eb9e4 solid 1px;
+    color: #2eb9e4;
+}
+
+.subscription-site:hover {
+    background-color: #2eb9e4;
+    color: white;
+}
+
+.header {
+    height: 200px;
+    font-size: 70px;
+}
+
+.container {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Whitney-Medium';
+}
