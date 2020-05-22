@@ -16,7 +16,7 @@ class HorizontalMenu extends Component {
         return <div style={ { display: 'flex' } }>
             <MenuButton title = "Главная"/>
             <MenuButton title = "Мои финансы"/>
-            <MenuButton title = "Мои подписки" active/>
+            <MenuButton title = "Мои подписки" active notification='5'/>
             <MenuButton title = "Платежи и переводы"/>
             <MenuButton title = "Безопасность"/>
             <MenuButton icon="mail"/>

@@ -75,12 +75,20 @@ a {
     cursor: pointer;
 }
 
-.menu-button > div:hover {
-    color: #efefef;
-}
-
 .menu-button-icon {
     background-color: #333333;
+}
+
+.menu-button-notification {
+    position: absolute;
+    right: -0.6em;
+    top: -0.6em;
+    z-index: 1;
+    background-color: red;
+    min-width: 1.2em;
+    text-align: center;
+    border-radius: 0.6em;
+    color: #efefef;
 }
 
 .subscription {

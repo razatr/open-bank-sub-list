@@ -22,10 +22,17 @@ class MenuButton extends Component {
         }
     }
 
+    getNotification() {
+        const { notification } = this.props
+        if (notification)
+            return <div className="menu-button-notification">{ notification }</div>
+    }
+
     render() {
         const { title, active, icon } = this.props
         return <div className={ (icon ? 'menu-button-icon ' : '') + 'menu-button' }
-                    style={ { backgroundColor: active ? MAIN_COLOR1 : 'none' } }>
+                    style={ { backgroundColor: active ? MAIN_COLOR1 : 'none', position: 'relative' } }>
+            { this.getNotification() }
             <div style={ {
                 margin: "auto",
                 fontSize: "1em",
