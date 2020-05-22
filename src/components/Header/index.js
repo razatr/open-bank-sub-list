@@ -3,10 +3,10 @@ import HorizontalMenu from "./HorizontalMenu";
 import HeaderImg from "./HeaderImg";
 
 class Header extends Component {
-    render(){
+    render() {
         return <React.Fragment>
-            <HeaderImg />
-            <HorizontalMenu />
+            <HeaderImg/>
+            <HorizontalMenu/>
         </React.Fragment>
     }
 }

@@ -31,12 +31,12 @@ class Body extends Component {
     render() {
 
         return <div id="body">
-            <div style={{flexGrow: 1}}>
-                <SubList />
+            <div className='body-left'>
+                <SubList/>
             </div>
-            <div style={{width: '1px', backgroundColor: '#efefef', boxShadow: '0 0 3px #efefef', padding: 0}} />
-            <div>
-                <RadialChart data={this.getData()} colors={this.getColors()}/>
+            <div className='body-split'/>
+            <div className='body-right'>
+                <RadialChart data={ this.getData() } colors={ this.getColors() }/>
             </div>
         </div>
     }

@@ -19,7 +19,7 @@ class SubList extends Component {
             const { subscriptions } = this.props //TODO Сделать аккодреон
             for (let id in subscriptions) {
                 const { title, nextDate, initialDate, price, currency, categoryId, notificationDelay, site, trial } = subscriptions[id]
-                body.push(<Subscription id = {id}
+                body.push(<Subscription id={ id }
                                         title={ title }
                                         date={ nextDate }
                                         initialDate={ initialDate }

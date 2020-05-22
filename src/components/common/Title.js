@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import {SMALL_TEXT, NORMAL_TEXT, LARGE_TEXT, MAIN_COLOR1} from '../../constants'
+import { SMALL_TEXT, NORMAL_TEXT, LARGE_TEXT, MAIN_COLOR1 } from '../../constants'
 
 class Title extends Component {
 

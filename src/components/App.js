@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withTranslation } from "react-i18next"
 import i18n from '../localization/i18n'
 import Body from './Body/Body'
-import Header from './Header/Header'
+import Header from './Header'
 
 class App extends Component {
 

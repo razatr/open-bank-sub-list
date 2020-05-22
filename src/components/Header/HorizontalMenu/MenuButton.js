@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { MAIN_COLOR1, MAIN_COLOR2 } from "../../constants"
+import { MAIN_COLOR1, MAIN_COLOR2 } from "../../../constants"
 import MailOutlineIcon from '@material-ui/icons/MailOutline'
 import SettingsIcon from '@material-ui/icons/Settings'
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom'

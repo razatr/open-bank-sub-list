@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import DescriptionTitle from "../../common/DescriptionTitle"
 import { connect } from 'react-redux'
 import { removeIdFromNewSub } from '../../../AC'
+import { MAIN_COLOR3 } from "../../../constants";
 
 class Subscription extends Component {
 
@@ -18,7 +19,7 @@ class Subscription extends Component {
         const { initialDate, price, currency, categoryId, notificationDelay, site, categories } = this.props
         const category = categories[categoryId].title
         if (isOpen) {
-            return <div style={ { padding: '10px', borderBottom: '1px solid #efefef' } }>
+            return <div className='subscription-description'>
                 <DescriptionTitle title="Стоимость" value={ price + ' ' + currency }/>
                 <DescriptionTitle title="Дата оформления" value={ initialDate }/>
                 <DescriptionTitle title="Категория" value={ category }/>
@@ -40,25 +41,21 @@ class Subscription extends Component {
         const { title, date, trial, categoryId, categories, id, newSub } = this.props
         const removeId = removeIdFromNewSub
         return (<React.Fragment>
-            <div className="subscription" style={ { backgroundColor: this.state.isOpen ? '#f8f8f8' : '' } }
+            <div className="subscription" style={ { backgroundColor: this.state.isOpen ? MAIN_COLOR3 : '' } }
                  onClick={ () => {
                      if (newSub.includes(id)) {
-                         this.setState({isNew: false})
+                         this.setState({ isNew: false })
                          this.props.dispatch(removeId(id))
                      }
                      this.setState({ isOpen: !this.state.isOpen })
                  } }>
-                <div style={ { display: 'flex', alignItems: 'center' } }>
-                    <div style={ {
-                        borderRadius: '5px',
-                        width: '10px',
-                        height: '10px',
-                        backgroundColor: categories[categoryId].color,
-                        marginRight: '15px'
+                <div className='subscription-left'>
+                    <div className='subscription-category-color' style={ {
+                        backgroundColor: categories[categoryId].color
                     } }/>
-                    Подписка { title + (this.state.isNew? ' (new)' : '') }
+                    Подписка { title + (this.state.isNew ? ' (new)' : '') }
                 </div>
-                <div style={ { display: 'flex' } }>
+                <div className='subscription-right'>
                     { trial === 'true' ? this.getTrialText() : '' }
                     <div>следующее
                         списание { date ? date : 'Неизвестно' }
