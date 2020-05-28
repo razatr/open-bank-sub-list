@@ -1,0 +1,112 @@
+{
+  "123154665": {
+    "title": "YandexDisk",
+    "nextDate": "11-06-2020",
+    "initialDate": "11-02-2018",
+    "price": "299",
+    "currency": "RUB",
+    "categoryId": "1",
+    "notificationDelay": "2",
+    "site": "https://disk.yandex.ru/tuning",
+    "trial": "false"
+  },
+  "121341516": {
+    "title": "Boom",
+    "nextDate": "22-05-2020",
+    "initialDate": "22-03-2019",
+    "price": "149",
+    "currency": "RUB",
+    "categoryId": "2",
+    "notificationDelay": "2",
+    "site": "http://boom.ru",
+    "trial": "true"
+  },
+  "2123242526": {
+    "title": "Netflix",
+    "nextDate": "29-05-2020",
+    "initialDate": "29-04-2020",
+    "price": "9,99",
+    "currency": "EUR",
+    "categoryId": "3",
+    "notificationDelay": "2",
+    "site": "https://www.netflix.com/browse",
+    "trial": "true"
+  },
+  "3132343536": {
+    "title": "Xbox",
+    "nextDate": "01-10-2020",
+    "initialDate": "29-11-2019",
+    "price": "2694",
+    "currency": "RUB",
+    "categoryId": "3",
+    "notificationDelay": "2",
+    "site": "https://disk.yandex.ru/tuning",
+    "trial" : "false"
+  },
+  "4142434546": {
+    "title": "YouTube Music Premium",
+    "nextDate": "23-06-2020",
+    "initialDate": "23-06-2019",
+    "price": "2694",
+    "currency": "RUB",
+    "categoryId": "2",
+    "notificationDelay": "2",
+    "site": "https://www.youtube.com/musicpremium",
+    "trial" : "false"
+  },
+  "5152535456": {
+    "title": "Zoom",
+    "nextDate": "06-06-2020",
+    "initialDate": "06-05-2020",
+    "price": "49",
+    "currency": "USD",
+    "categoryId": "1",
+    "notificationDelay": "2",
+    "site": "https://zoom.us/ru-ru/zoomrooms/software.html",
+    "trial" : "false"
+  },
+  "6162636465": {
+    "title": "Litres",
+    "nextDate": "19-08-2020",
+    "initialDate": "19-02-2020",
+    "price": "1998",
+    "currency": "RUB",
+    "categoryId": "1",
+    "notificationDelay": "2",
+    "site": "https://www.litres.ru/kollekcii-knig/knigi-po-podpiske/",
+    "trial" : "false"
+  },
+  "7172737475": {
+    "title": "ivi",
+    "nextDate": "30-05-2020",
+    "initialDate": "30-04-2020",
+    "price": "399",
+    "currency": "RUB",
+    "categoryId": "3",
+    "notificationDelay": "2",
+    "site": "https://www.ivi.ru/plus",
+    "trial" : "true"
+  },
+  "8182838485": {
+    "title": "Wolfram Alpha Pro",
+    "nextDate": "03-06-2020",
+    "initialDate": "20-05-2020",
+    "price": "4,99",
+    "currency": "USD",
+    "categoryId": "1",
+    "notificationDelay": "2",
+    "site": "https://www.wolframalpha.com/pro/",
+    "trial" : "true"
+  },
+  "9192939495": {
+    "title": "Wolfram Alpha Pro",
+    "nextDate": "02-02-2021",
+    "initialDate": "02-02-2020",
+    "price": "499",
+    "currency": "USD",
+    "categoryId": "6",
+    "notificationDelay": "2",
+    "site": "https://www.jetbrains.com/ru-ru/idea/buy/#commercial?billing=yearly",
+    "trial" : "false"
+  }
+}

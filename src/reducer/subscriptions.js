@@ -1,20 +1,21 @@
 import { LOAD_SUBSCRIPTION, SUCCESS, START, FAIL, SUB_REVIEWED } from '../constants'
 import { Record, List } from 'immutable'
 import newSub from '../data/new-sub'
+import subscriptions from '../data/subscriptions'
 
 const subRecord = Record({
     loading: false,
     loaded: false,
     error: false,
-    entities: {},
+    entities: subscriptions,
     newSub: new List(newSub)
 })
 
 export default (state = new subRecord(), action) => {
-    const { type, error, response, payload } = action
+    const { type, response, payload } = action
 
     switch (type) {
-        case LOAD_SUBSCRIPTION + START:
+        /*case LOAD_SUBSCRIPTION + START:
             return state.set('loading', true)
                 .set('loaded', false)
 
@@ -24,7 +25,7 @@ export default (state = new subRecord(), action) => {
                 .set('entities', response)
 
         case LOAD_SUBSCRIPTION + FAIL:
-            return state.set('error', true)
+            return state.set('error', true)*/
 
         case SUB_REVIEWED:
             const key = state.get('newSub').keyOf(payload)
